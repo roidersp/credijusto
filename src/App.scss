@@ -1,5 +1,94 @@
-.main{
-  display: flex;
+.mainContainer{
   width: 100%;
   min-height: 100vh;
+}
+
+header{
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  padding: 20px;
+  h1{
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabsConatiner{
+  width: 90%;
+  max-width: 900px;
+  margin-top: 60px;
+}
+
+.tabSlideContainer{
+  background-color: #5d7db8;
+  border: 1px solid #ccc;
+}
+
+.tabsTopContainer{
+  display: flex;
+}
+
+.tabTopItem{
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 7px 15px;
+  cursor: pointer;
+  &:hover{
+    background-color: #ccc;
+  }
+  &.active{
+    background-color: black;
+    color: #FFF;
+  }
+}
+
+.criptoContainer{
+  width: 100%;
+  display: flex;
+  min-height: 300px;
+  padding: 20px 0px;
+  justify-content: space-around;
+}
+
+.criptoItem{
+  width: calc(30%);
+  background-color: #9bb6cc;
+  padding: 10px 0;
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    margin: 10px 15px;
+    li{
+      display: flex;
+      justify-content: space-between;
+      &>div{
+        margin: 5px;
+      }
+    }
+
+  }
+}
+
+.criptoItemHead{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.criptoname{
+  font-size: 16px;
+  text-align: center;
 }
